@@ -1,0 +1,6 @@
+{
+  "name": "FH Genetic Testing Assistant",
+  "description": "An educational informational assistant from SingHealth Genomic Assessment Centre (GAC) supporting patients referred for Familial Hypercholesterolaemia (FH) genetic testing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
