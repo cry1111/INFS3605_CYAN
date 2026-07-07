@@ -1,0 +1,6 @@
+{
+  "name": "FH Testing Assistant",
+  "description": "Patient-facing informational assistant for the SingHealth Genomic Assessment Centre (GAC) regarding FH genetic testing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
