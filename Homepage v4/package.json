@@ -1,0 +1,13 @@
+{
+  "name": "infs3605-cyan-workspace",
+  "private": true,
+  "workspaces": [
+    "Homepage v1",
+    "Website rough draft"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=\"Homepage v1\"",
+    "build": "npm run build --workspace=\"Homepage v1\" && cp -r \"Homepage v1/dist\" ./dist",
+    "lint": "npm run lint --workspace=\"Homepage v1\""
+  }
+}

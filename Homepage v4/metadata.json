@@ -1,0 +1,6 @@
+{
+  "name": "FH Genetic Testing Patient Education",
+  "description": "An interactive, multilingual patient education resource for Familial Hypercholesterolaemia (FH) and genetic testing referral guidance in Singapore.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
