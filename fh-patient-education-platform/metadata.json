@@ -1,0 +1,6 @@
+{
+  "name": "FH Patient Education Platform",
+  "description": "An interactive, patient-facing website providing plain-language education on Familial Hypercholesterolaemia (FH) genetic testing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
