@@ -1,0 +1,8 @@
+{
+  "name": "SingHealth GAC: FH Genetic Testing Portal & AI Assistant",
+  "description": "An interactive patient portal and educational AI chatbot companion regarding Familial Hypercholesterolaemia (FH) genetic testing at the SingHealth Genomic Assessment Centre (GAC).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

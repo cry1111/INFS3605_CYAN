@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Professional Polish Theme: Redefining blue shades to pristine teal shades */
+  --color-blue-50: #f0fdfa; /* teal-50 */
+  --color-blue-100: #ccfbf1; /* teal-100 */
+  --color-blue-200: #99f6e4; /* teal-200 */
+  --color-blue-300: #5eead4; /* teal-300 */
+  --color-blue-400: #2dd4bf; /* teal-400 */
+  --color-blue-500: #14b8a6; /* teal-500 */
+  --color-blue-600: #0d9488; /* teal-600 (MOH approved primary clinical teal) */
+  --color-blue-700: #0f766e; /* teal-700 */
+  --color-blue-800: #115e59; /* teal-800 */
+  --color-blue-900: #134e4a; /* teal-900 */
+  --color-blue-950: #042f2e; /* teal-950 */
+}
+
+/* Custom CSS classes from the Professional Polish design spec */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.stage-line {
+  height: 2px;
+  background: repeating-linear-gradient(to right, #0d9488, #0d9488 4px, transparent 4px, transparent 8px);
+}
+
+.modal-overlay {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(13, 148, 136, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.heart-pulse {
+  animation: heart-pulse 2s infinite;
+}
+
+@keyframes heart-pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.85; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Custom Accessibility: Text Scaling */
+.theme-large-text {
+  font-size: 1.15rem; /* Scales up overall base font-size */
+}
+
+.theme-large-text p {
+  font-size: 1.05rem !important;
+  line-height: 1.65 !important;
+}
+
+.theme-large-text h1 {
+  font-size: 2.75rem !important;
+}
+
+.theme-large-text h2 {
+  font-size: 2.25rem !important;
+}
+
+.theme-large-text h3 {
+  font-size: 1.5rem !important;
+}
+
+.theme-large-text button,
+.theme-large-text a {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  font-size: 0.95rem !important;
+}
+
+.theme-extra-large-text {
+  font-size: 1.3rem; /* Scales up overall base font-size even more */
+}
+
+.theme-extra-large-text p {
+  font-size: 1.2rem !important;
+  line-height: 1.75 !important;
+}
+
+.theme-extra-large-text h1 {
+  font-size: 3.25rem !important;
+}
+
+.theme-extra-large-text h2 {
+  font-size: 2.75rem !important;
+}
+
+.theme-extra-large-text h3 {
+  font-size: 1.75rem !important;
+}
+
+.theme-extra-large-text button,
+.theme-extra-large-text a {
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+  font-size: 1.1rem !important;
+}
+
+/* Custom Accessibility: High Contrast Modes */
+.theme-high-contrast {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.theme-high-contrast .bg-slate-50,
+.theme-high-contrast .bg-slate-100,
+.theme-high-contrast .bg-slate-50\/50,
+.theme-high-contrast .bg-blue-50,
+.theme-high-contrast .bg-blue-50\/50 {
+  background-color: #ffffff !important;
+  border-color: #000000 !important;
+  border-width: 2px !important;
+  color: #000000 !important;
+}
+
+.theme-high-contrast .text-slate-500,
+.theme-high-contrast .text-slate-600,
+.theme-high-contrast .text-slate-700,
+.theme-high-contrast .text-slate-800,
+.theme-high-contrast .text-blue-800,
+.theme-high-contrast .text-indigo-700,
+.theme-high-contrast .text-emerald-700,
+.theme-high-contrast .text-amber-700 {
+  color: #000000 !important;
+}
+
+.theme-high-contrast .border,
+.theme-high-contrast .border-slate-150,
+.theme-high-contrast .border-slate-200,
+.theme-high-contrast .border-slate-200\/60 {
+  border-color: #000000 !important;
+  border-width: 2px !important;
+}
+
+.theme-high-contrast .text-blue-600,
+.theme-high-contrast .text-teal-600 {
+  color: #1d4ed8 !important; /* Starker blue */
+  font-weight: 800 !important;
+}
+
+/* Custom Accessibility: Reduced Motion */
+.theme-reduced-motion * {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+  transform: none !important;
+}
